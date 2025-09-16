@@ -37,28 +37,6 @@ if st.button("Get Recommendations"):
             st.progress(rec["score"])
             st.write(f"Match: **{int(rec['score']*100)}%**")
             st.divider()"""
-"""
-Internship Recommendation Engine - Streamlit Prototype
-
-How to run locally:
-1. Create a virtual env: python -m venv venv && source venv/bin/activate (or venv\Scripts\activate on Windows)
-2. Install requirements: pip install streamlit pandas
-3. Run: streamlit run internship_recommendation_app.py
-
-How to deploy (quick options):
-- Streamlit Community Cloud (recommended): push this file and a requirements.txt to a GitHub repo, then connect the repo in https://streamlit.io/cloud and click Deploy.
-- Render / Railway: create a GitHub repo, add a start command (e.g., streamlit run internship_recommendation_app.py --server.port $PORT) and follow the host's docs.
-
-Features in this prototype:
-- Enter your skills (comma-separated or newline) and optional filters (role/location/company)
-- Built-in sample internship dataset (editable / upload CSV)
-- Simple matching algorithm: skill overlap score + optional keyword boosts
-- Allows CSV upload of internships with columns: title, company, location, description, skills (comma-separated)
-- Export matched results to CSV
-
-You can copy-paste this file into a repo and deploy immediately.
-
-"""
 
 import streamlit as st
 import pandas as pd
@@ -263,4 +241,5 @@ st.markdown("---")
 st.caption("Prototype built with Streamlit. If you want a React + Flask deployment, or automatic scraping of live internship posts (LinkedIn/Internshala/GitHub Jobs), I can provide that next — note scraping job sites may require respecting their terms of service.")
 
 # ----------------------- End -----------------------
+
 
