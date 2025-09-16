@@ -38,7 +38,7 @@ if st.button("Get Recommendations"):
             st.write(f"Match: **{int(rec['score']*100)}%**")
             st.divider()"""
 
-import streamlit as st
+"""import streamlit as st
 import pandas as pd
 import math
 from io import StringIO
@@ -239,7 +239,8 @@ with right:
 
 st.markdown("---")
 st.caption("Prototype built with Streamlit. If you want a React + Flask deployment, or automatic scraping of live internship posts (LinkedIn/Internshala/GitHub Jobs), I can provide that next — note scraping job sites may require respecting their terms of service.")
-
+"""
 # ----------------------- End -----------------------
+
 
 
