@@ -1,4 +1,4 @@
-# internship_recommendation_app.py
+"""# internship_recommendation_app.py
 
 import streamlit as st
 
@@ -36,4 +36,5 @@ if st.button("Get Recommendations"):
             st.write(f"Required Skills: {', '.join(rec['skills'])}")
             st.progress(rec["score"])
             st.write(f"Match: **{int(rec['score']*100)}%**")
-            st.divider()
+            st.divider()"""
+
